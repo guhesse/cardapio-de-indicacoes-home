@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mudar depois</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <!-- titulo fotos começo-->
+    <div>
+        <center>
+            <p class="rd-text title"> Selecione a sua unidade! </p>
+        </center>
+    </div>
+    <!-- titulo fotos término-->
+
+
+    <hr class="hr" />
+
+
+    <!-- escondido começo-->
+
+    <div class="options d-none">
+        <label><input type="radio" name="operation" value="union" id="op-union" checked> Union</label>
+        <label><input type="radio" name="operation" value="intersection" id="op-inter"> Intersection</label>
+    </div>
+
+    <!-- escondido término-->
+
+    <div class="container padding-bottom-bar">
+        <div class="form-outline">
+            <input type="search" id="myInput" class="form-control" placeholder="Procure por nome do empreendimento"
+                aria-label="Search" />
+        </div>
+    </div>
+
+    <!-- filtros começo -->
+    <div class="mx-auto max-wigth">
+        <div class="col-12 padding-bottom-bar">
+            <div class="row categories ">
+                <!-- Categoria Metade -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="titulo-categoria text-center">
+                        <h3 class="titulo-categoria">
+                            Cidades
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-esq">
+                                <label><input class="form-check-input margin-right-checkbox " type="checkbox" id="sp"
+                                        value="sp">São Paulo</label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-dir">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox" id="rj"
+                                        value="rj">Rio de Janeiro</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-esq">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox" id="poa"
+                                        value="poa">Porto Alegre</label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-dir">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox"
+                                        id="barueri" value="barueri">Barueri</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categoria Metade -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="titulo-categoria text-center">
+                        <h3 class="titulo-categoria">
+                            Categorias
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-esq">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox" id="smart"
+                                        value="smart">Smart</label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-dir">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox"
+                                        id="charlie" value="charlie">Charlie</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 text-left checkbox-text">
+                            <div class="checkbox text-nowrap padding-filtro-esq">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox"
+                                        id="bycharlie" value="bycharlie">By Charlie</label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-left checkbox-text-disabled">
+                            <div class="checkbox text-nowrap padding-filtro-dir">
+                                <label><input class="form-check-input margin-right-checkbox" type="checkbox" id="crazy"
+                                        value="crazy" disabled>Crazy (em breve)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr" />
+    <!-- filtros término -->
+
+    <!-- começo do grid de fotos -->
+    <div class="container col-12">
+        <div class="row">
+
+            <!-- Charlie Itaim -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro 5-100">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20itaim.jpg"
+                        alt="Charlie Itaim">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Itaim</h5>
+                        <p class="card-text fonte-corpo"> Rua João Cachoeira, 1577 </br>Itaim Bibi, São Paulo - SP,
+                            04535-015</p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-itaim">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Century Itaim -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20century%20itaim.jpg"
+                        alt="Charlie Century Itaim">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Century Itaim</h5>
+                        <p class="card-text fonte-corpo"> Rua Pedroso Alvarenga, 1256</br> Itaim Bibi, São Paulo -
+                            SP,
+                            04531-004 </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-century-itaim">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Jerônimo da Veiga -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20jeronimo%20da%20veiga.jpg"
+                        alt="Charlie Jerônimo da Veiga">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Jerônimo da Veiga</h5>
+                        <p class="card-text fonte-corpo"> Rua Jerônimo da Veiga, 248 </br> Itaim Bibi, São Paulo -
+                            SP,
+                            04536-001</p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-jeronimo-da-veiga">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Ed. Jd. Paulista -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20edicao%20jardim%20paulista.jpg"
+                        alt="Charlie Ed. Jd. Paulista">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Ed. Jd. Paulista</h5>
+                        <p class="card-text fonte-corpo"> Alameda Fernão Cardim, 70 </br>Jardim Paulista, São Paulo
+                            -
+                            SP,
+                            01403-020</p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-edicao-jardim-paulista">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie One Eleven Vila Olímpia -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20one%20eleven%20vila%20olimpia.jpg"
+                        alt="Charlie One Eleven Vila Olímpia">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie One Eleven Vila Olímpia</h5>
+                        <p class="card-text fonte-corpo"> Rua Pequetita, 111</br> Vila Olímpia, São Paulo - SP,
+                            04552-907
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-one-eleven-vila-olimpia">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Brooklin Studios -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20brooklin%20studios.jpg"
+                        alt="Charlie Brooklin Studios">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Brooklin Studios</h5>
+                        <p class="card-text fonte-corpo"> Rua das Sempre-Vivas, 21 </br> Itaim Bibi, São Paulo - SP,
+                            04704-030
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-brooklin-studios">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie NYC Berrini -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20nyc%20berrini.jpg"
+                        alt="Charlie NYC Berrini">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro"> São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie NYC Berrini</h5>
+                        <p class="card-text fonte-corpo"> Rua Sansão Alves dos Santos, 56 </br>Cidade Monções, São
+                            Paulo
+                            - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-nyc-berrini">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Charlie Mobi Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="smart">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/smart%20charlie%20mobi%20pinheiros.jpg"
+                        alt="Smart Charlie Mobi Pinheiros">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-smart texto-centro"> Smart </button><button class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Smart Charlie Mobi Pinheiros</h5>
+                        <p class="card-text fonte-corpo"> Rua Alves Guimarães, 251</br> Pinheiros, São Paulo - SP,
+                            05410-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-mobi-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Homelike Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20homelike%20pinheiros.jpg"
+                        alt="Charlie Homelike Pinheiros">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro"> São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Homelike Pinheiros</h5>
+                        <p class="card-text fonte-corpo"> Rua Fernão Dias, 407 </br> Pinheiros, São Paulo - SP,
+                            05427-010</p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-homelike-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie NUN Itaim -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20nun%20itaim.jpg"
+                        alt="Charlie NUN Itaim">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro"> São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie NUN Itaim</h5>
+                        <p class="card-text fonte-corpo"> Rua Doutor Guilherme Bannitz, 60</br> Itaim Bibi, São
+                            Paulo -
+                            SP,
+                            04532-060 </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-nun-itaim">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Aeroporto Congonhas CGH -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20aeroporto%20congonhas%20cgh.jpg"
+                        alt="Charlie Aeroporto Congonhas CGH">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro"> São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Aeroporto Congonhas CGH</h5>
+                        <p class="card-text fonte-corpo"> Rua Renascença, 113 </br> Vila Congonhas, São Paulo - SP,
+                            04612-010
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-congonhas-cgh">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Bossa Ipanema -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="rj" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top;"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20bossa%20ipanema.jpg"
+                        alt="Charlie Bossa Ipanema">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-rj texto-centro"> Rio
+                                de Janeiro </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Bossa Ipanema</h5>
+                        <p class="card-text fonte-corpo"> Rua Barão da Torre, 107</br> Ipanema, Rio de Janeiro - RJ,
+                            22411-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-bossa-ipanema">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie The Park Cidade Baixa -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="poa" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20the%20park.jpg"
+                        alt="Charlie The Park Cidade Baixa">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-poa texto-centro"> Porto Alegre </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie The Park Cidade Baixa</h5>
+                        <p class="card-text fonte-corpo"> Avenida João Pessoa, 775</br> Centro Histórico , Porto Alegre
+                            - RS
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-the-park-cidade-baixa">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Vl. Nv. Conceição Jacques Félix -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20vl%20nova%20jacques%20felix.jpg"
+                        alt="Charlie Vila Nova Conceição Jacques Félix">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Vl. Nv. Conceição Jacques Félix</h5>
+                        <p class="card-text fonte-corpo"> Rua Jacques Félix, 601</br> Vl. Nova Conceição , São Paulo
+                            - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-vila-nova-conceicao-jacques-felix">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Porto Alegre Moinhos -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="poa" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20poa%20moinhos.jpg"
+                        alt="Charlie Porto Alegre Moinhos">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-poa texto-centro"> Porto Alegre </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Porto Alegre Moinhos</h5>
+                        <p class="card-text fonte-corpo"> Rua Ten. Cor. Fabricio Pillar, 311</br> Mont'Serrat , Porto
+                            Alegre
+                            - RS
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-porto-alegre-moinhos">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Alphaville -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="barueri" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20alphaville.jpg"
+                        alt="Charlie Alphaville">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-barueri texto-centro"> Barueri </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Alphaville</h5>
+                        <p class="card-text fonte-corpo"> Alameda Mamoré, 809</br> Barueri
+                            - SP, CEP 06454-040
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-alphaville">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Charlie Bela Vista -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="smart">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/smart%20charlie%20bela%20vista.jpg"
+                        alt="Smart Charlie Bela Vista">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-smart texto-centro"> Smart </button><button class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Smart Charlie Bela Vista</h5>
+                        <p class="card-text fonte-corpo"> Rua Genebra, 197</br> Bela Vista, São Paulo - SP,
+                            01316-010
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-smart-charlie-bela-vista">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Charlie Vitta Campo Belo -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="smart">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/smart%20charlie%20vitta%20campo%20belo.jpg"
+                        alt="Smart Charlie Vitta Campo Belo">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-smart texto-centro"> Smart </button><button class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Smart Charlie Vitta Campo Belo</h5>
+                        <p class="card-text fonte-corpo"> Rua Morais de Barros, 880</br> Campo Belo, São Paulo - SP,
+                            04614-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-smart-charlie-vitta-campo-belo">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paulista Suites by Charlie -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="bycharlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/paulista%20suites%20by%20charlie.jpg"
+                        alt="Paulista Suites by Charlie">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-bycharlie texto-centro"> By Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Paulista Suites by Charlie</h5>
+                        <p class="card-text fonte-corpo"> Rua Vergueiro, 1661</br> Vl. Mariana, São Paulo - SP, CEP
+                            04161-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-paulista-suites-by-charlie">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paraíso Suites by Charlie -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="bycharlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/paraiso%20suites%20by%20charlie.jpg"
+                        alt="Paraíso Suites by Charlie">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-bycharlie texto-centro"> By Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Paraíso Suites by Charlie</h5>
+                        <p class="card-text fonte-corpo"> Rua Apeninos, 1070</br> Vl. Mariana, São Paulo - SP, CEP
+                            04104-021
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-paraiso-suites-by-charlie">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Top Apart Leblon -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="rj" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top;"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20top%20apart%20leblon.jpg"
+                        alt="Charlie Top Apart Leblon">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-rj texto-centro"> Rio
+                                de Janeiro </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Top Apart Leblon</h5>
+                        <p class="card-text fonte-corpo"> Rua João Líra, 95</br> Leblon, Rio de Janeiro - RJ,
+                            22440-033
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-top-apart-leblon">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Charlie Consolação -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="smart">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/smart%20charlie%20consolacao.jpg"
+                        alt="Smart Charlie Consolação">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-smart texto-centro"> Smart </button><button class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Smart Charlie Consolação</h5>
+                        <p class="card-text fonte-corpo"> Rua Rêgo Freitas, 484</br> República, São Paulo - SP, CEP
+                            01220-010
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-smart-charlie-consolacao">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NewCiti Itaim by Charlie -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="bycharlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/newciti%20itaim%20by%20charlie.jpg"
+                        alt="NewCiti Itaim by Charlie">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-bycharlie texto-centro"> By Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">NewCiti Itaim by Charlie</h5>
+                        <p class="card-text fonte-corpo"> Rua Pedroso Alvarenga, 543</br> Itaim Bibi, São Paulo - SP,
+                            CEP 04531-011
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-newciti-itaim-by-charlie">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Sabiá Moema -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20sabia%20moema.jpg"
+                        alt="Charlie Sabiá Moema">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Sabiá Moema</h5>
+                        <p class="card-text fonte-corpo"> Avenida Sabiá, 641</br> Moema, São Paulo
+                            - SP CEP 04515-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://www-staycharlie-com-br-1.rds.land/cardapio-de-indicacoes-charlie-sabia-moema">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Sabiá Flat -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20sabia%20flat.jpg"
+                        alt="Charlie Sabiá Flat">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Sabiá Flat</h5>
+                        <p class="card-text fonte-corpo"> Avenida Sabiá, 641</br> Moema, São Paulo
+                            - SP CEP 04515-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-sabia-flat">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Porto Alegre Duque -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="poa" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20poa%20duque.jpg"
+                        alt="Charlie Porto Alegre Duque">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-poa texto-centro"> Porto Alegre </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Porto Alegre Duque</h5>
+                        <p class="card-text fonte-corpo"> Rua Duque de Caxias, 1705</br> Centro , Porto
+                            Alegre - RS 90010-283
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-porto-alegre-duque">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Porto Alegre Praça 4 -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="poa" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20poa%20praca%204.jpg"
+                        alt="Charlie Porto Alegre Praça 4">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-poa texto-centro"> Porto Alegre </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Porto Alegre Praça 4</h5>
+                        <p class="card-text fonte-corpo"> Rua José de Alencar, 1068</br> Menino Deus , Porto
+                            Alegre - RS
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-praca-4">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Oscar Freire -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20oscar%20freire.jpg"
+                        alt="Charlie Oscar Freire">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Oscar Freire</h5>
+                        <p class="card-text fonte-corpo"> Rua Capote Valente, 80</br> Pinheiros, São Paulo
+                            - SP CEP 05409-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-oscar-freire">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Vitrali Moema -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20vitrali%20moema.jpg"
+                        alt="Charlie Vitrali Moema">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Vitrali Moema</h5>
+                        <p class="card-text fonte-corpo"> Alameda Iraé, 664</br> Moema, São Paulo
+                            - SP CEP 04075-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-vitrali-moema">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Domy Paraíso -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20domy%20paraiso.jpg"
+                        alt="Charlie Domy Paraíso">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Domy Paraíso</h5>
+                        <p class="card-text fonte-corpo"> R. Dr. Nicolau de Sousa Queirós, 461</br> Vl. Mariana, São
+                            Paulo
+                            - SP CEP 04105-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-domy-vila-mariana">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie DStay Moema -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20dstay%20moema.jpg"
+                        alt=" Charlie DStay Moema ">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo "> Charlie DStay Moema </h5>
+                        <p class="card-text fonte-corpo"> Avenida Iraí, 205</br> Moema, São Paulo
+                            - SP CEP 04082-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-dstay-moema">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Itaim Bueno Brandão -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20itaim%20bueno%20brand%C3%A3o.jpg"
+                        alt="Charlie Itaim Bueno Brandão">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo ">Charlie Itaim Bueno Brandão</h5>
+                        <p class="card-text fonte-corpo"> Rua Bueno Brandão, 382</br> Vl. Nova Conceição, São Paulo
+                            - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-itaim-bueno-brandao">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20pinheiros.jpg"
+                        alt=" Charlie Pinheiros ">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo "> Charlie Pinheiros </h5>
+                        <p class="card-text fonte-corpo"> R. Dr. Virgílio de Carvalho Pinto, 262</br> Pinheiros, São
+                            Paulo
+                            - SP CEP 05415-020
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Housi Perdizes by Charlie -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="bycharlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/housi%20perdizes%20by%20charlie.jpg"
+                        alt="Housi Perdizes by Charlie">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-bycharlie texto-centro"> By Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Housi Perdizes by Charlie</h5>
+                        <p class="card-text fonte-corpo"> Rua Apiacás, 104</br> Perdizes, São Paulo - SP, CEP
+                            05017-020
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-housi-perdizes-by-charlie">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Jockey Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20jockey%20pinheiros.jpg"
+                        alt=" Charlie Jockey Pinheiros ">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo "> Charlie Jockey Pinheiros </h5>
+                        <p class="card-text fonte-corpo"> Rua Bento Frias, 155</br> Pinheiros, São Paulo
+                            - SP CEP 05423-050
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-jockey-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Girassol Vila Madalena -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20girassol%20vila%20madalena.jpg"
+                        alt=" Charlie Girassol Vila Madalena ">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo "> Charlie Girassol Vila Madalena </h5>
+                        <p class="card-text fonte-corpo"> Rua Girassol, 1280</br> Vila Madalena, São Paulo
+                            - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-girassol-vila-madalena">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Massis Paulista by Charlie -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="bycharlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/massis%20paulista%20by%20charlie.jpg"
+                        alt="Massis Paulista by Charlie">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-bycharlie texto-centro"> By Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Massis Paulista by Charlie</h5>
+                        <p class="card-text fonte-corpo"> Rua Luís Coelho, 80</br> Consolação, São Paulo - SP, CEP
+                            01309-001
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-massis-paulista">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Houx Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20houx%20pinheiros.jpg"
+                        alt=" Charlie Houx Pinheiros ">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-sp texto-centro"> São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo "> Charlie Houx Pinheiros </h5>
+                        <p class="card-text fonte-corpo"> Rua Fernão Dias, 551</br> Pinheiros, São Paulo
+                            - SP, CEP 05427-011
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-houx-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Charlie Frei Caneca -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="smart">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/smart%20charlie%20frei%20caneca.jpg"
+                        alt="Smart Charlie Frei Caneca">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-smart texto-centro"> Smart </button><button class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Smart Charlie Frei Caneca</h5>
+                        <p class="card-text fonte-corpo"> Rua Gravataí, 87</br> Consolação, São Paulo - SP, CEP
+                            01303-040
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-smart-charlie-frei-caneca">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Wide Pinheiros -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20wide%20pinheiros.jpg"
+                        alt="Charlie Wide Pinheiros">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Wide Pinheiros</h5>
+                        <p class="card-text fonte-corpo"> Avenida Rebouças, 2636 </br> Pinheiros, São Paulo - SP, CEP
+                            05402-400
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-wide-pinheiros">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie For You Vila Mariana -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/house%20of%20charlie%20vila%20mariana.jpg"
+                        alt="Charlie For You Vila Mariana">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie For You Vila Mariana</h5>
+                        <p class="card-text fonte-corpo"> Rua Joaquim Távora, 241 </br> Vila Mariana, São Paulo - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-for-you-vila-mariana">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- House of Charlie Vila Mariana -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/house%20of%20charlie%20vila%20mariana.jpg"
+                        alt="House of Charlie Vila Mariana">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">House of Charlie Vila Mariana</h5>
+                        <p class="card-text fonte-corpo"> Rua Joaquim Távora, 241 </br> Vila Mariana, São Paulo - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-house-of-charlie-vila-mariana">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Forma Itaim -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20forma%20itaim.jpg"
+                        alt="Charlie Forma Itaim">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São
+                                Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Forma Itaim</h5>
+                        <p class="card-text fonte-corpo"> Rua Min. Jesuíno Cardoso </br> Itaim Bibi, São Paulo - SP, CEP
+                            04544-050
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-forma-itaim">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie JP Redenção Cidade Baixa -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="poa" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top"
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20pinheiros.jpg"
+                        alt="Charlie JP Redenção Cidade Baixa">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button>
+                            <button class="tag-poa texto-centro"> Porto Alegre </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie JP Redenção Cidade Baixa</h5>
+                        <p class="card-text fonte-corpo"> Joao Pessoa, 735 </br> Cidade Baixa , Porto
+                            Alegre - RS 90040-000
+                        </p>
+                        <div class="flex-container center-center">
+                            <a
+                                href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-jp-redencao-cidade-baixa">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charlie Thera Ibirapuera -->
+            <div class="filterDiv col-md-6 col-lg-4 show" data-city="sp" data-category="charlie">
+                <div class="card texto-centro">
+                    <img class="card-img-top "
+                        src="https://contentstatic.blob.core.windows.net/prd/mkt_fotos_lp/_covers-home/charlie%20forma%20itaim.jpg"
+                        alt="Charlie Thera Ibirapuera">
+                    <div class="card-body">
+                        <div class="flex-container center-center">
+                            <button class="tag-charlie texto-centro"> Charlie </button><button
+                                class="tag-sp texto-centro">
+                                São Paulo </button>
+                        </div>
+                        <h5 class="card-title fonte-titulo">Charlie Thera Ibirapuera</h5>
+                        <p class="card-text fonte-corpo"> Avenida Rubem Berta, 850 </br> Indianópolis, São Paulo - SP
+                        </p>
+                        <div class="flex-container center-center">
+                            <a href="https://paginas.staycharlie.com.br/cardapio-de-indicacoes-charlie-thera-ibirapuera">
+                                <button class="botao"> Acessar Cardápio </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- término do grid de fotos -->
+    <!-- começo do mapa do google -->
+
+    <div class="container md-center padding-menu margin-map">
+        <div>
+            <center>
+                <p class="rd-text title"> Localização dos Empreendimentos </p>
+            </center>
+        </div>
+        <div class="row justify-content-md-center">
+            <!-- Mapa SP -->
+            <div class="col-md-6 col-12 container text-center">
+                <iframe title="Mapa São Paulo"
+                    src="https://www.google.com/maps/d/embed?mid=14EiLVOlTJwz5E4xDdz09mY4Vixr7jCo&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </div>
+            <!-- Mapa POA -->
+            <div class="col-md-6 col-12 container text-center">
+                <iframe title="Mapa Porto Alegre"
+                    src="https://www.google.com/maps/d/embed?mid=1sqsBp5WLOkQVJ2hPyQELIjjcwlV9hDc&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- final do mapa do google -->
+
+
+
+    <!-- importação de javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/10becbea76.js" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+    <!-- importação de javascript -->
+</body>
+
+</html>
